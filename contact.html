@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fav Books</title>
+  <style>*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:cursive,fantasy;
+    
+    }
+    
+    body{
+      display: grid;
+        place-items: center;
+        height: 100vh;
+    
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+    
+    }
+    
+    
+    nav{
+    position: relative;
+    display:flex;
+    background-color: black
+    ;
+    height: 80px;
+    width: 100%;
+    border-radius:6px;
+    margin-top: -50px;
+    
+    
+    
+    }
+    
+    
+    nav ul{
+      list-style-type:none;
+      float: right;
+     
+      color: white;
+    
+    }
+    
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+      flex: 1;
+     margin-left: 130px;
+    }
+    
+    nav ul li a{
+      color:white;
+      font-size: 17px;
+      padding: 15px 29px;
+      border-radius: 8px;
+      text-align: center;
+      justify-content: center;
+      
+    }
+    
+    button {
+      border: none;
+      color: white;
+      background-color: darkgoldenrod;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      transition-duration: 0.4s;
+      cursor:grab;
+    }
+    button:hover {
+      background-color:white; 
+      color: red;
+    }
+    
+    input[type=text] {
+      background-color: white;
+      width: 30%;
+      height: 30px;
+      background-position: 10px 10px;
+     
+      background-repeat: no-repeat;
+      transition: width 0.4s ease-in-out;
+     
+    }
+    input[type=email]{
+      background-color: white;
+      width: 30%;
+      height: 30px;
+      background-position: 10px 10px;
+     
+      background-repeat: no-repeat;
+      transition: width 0.4s ease-in-out;
+
+
+    }
+
+    textarea{
+padding: 50px;
+
+    }
+
+    form{
+display: flex;
+flex-direction: column;
+
+
+
+    }
+    
+    input[type=text],input[type=email]:focus {
+      width: 40%;
+    }
+    
+    #side1{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/503/355/645/antonin-hudecek-classic-art-nature-painting-wallpaper-preview.jpg');
+    height: 200%;
+    width: 150px;
+    position: absolute;
+    left:0px;
+    top: 0;
+    bottom: 0;
+    z-index: -1; 
+    padding-bottom: 1000px;
+     
+    
+    } 
+    
+    #side2{
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/503/355/645/antonin-hudecek-classic-art-nature-painting-wallpaper-preview.jpg') ;
+      height: 200%;
+      width: 150px;
+      background-repeat: repeat-y;
+    
+      position: absolute;
+      right: 0px;
+      
+      top: 0;
+      bottom: 0;
+    z-index: -1;
+    }
+     
+ 
+ 
+     footer{
+      position: fixed;
+      margin-top: 2%;
+      height: 50;
+       width: 100%;
+      text-align: center;
+      font-size: 0.8em;
+      bottom: 0;
+    
+     }
+   
+    #middle1 {
+    width: 70%;
+   
+    padding-top: 0px;
+ 
+
+    
+    }
+  
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+<li><a href="library.html">Book Search</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="bookshare.html">Books share</a></li>
+<li><a href="contact">Contact us</a></li>
+
+    </ul>
+  </nav>
+  <div id="side1"></div>
+  <div id="middle1">
+    <h1>Contact us:</h1><br>
+    <p>Send Us A Message:</p>
+    <form>
+<input type="text" name="Name" placeholder="Your Name"><br>
+<input type="email" name="email" placeholder="Your Email" required><br>
+<textarea name="books" placeholder="Type your Message Here" height="45px" width="45px"></textarea><br>
+
+        <button type="submit">Send</button>
+  
+    </form>
+  </div>
+  <div id="side2"></div>
+  
+<footer>
+  <p>Made By Halah, 2022</p>
+</footer>
+<script src="library.js"></script>
+</body>
+</html>

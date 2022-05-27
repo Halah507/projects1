@@ -1,0 +1,206 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+font-family:cursive,fantasy;
+
+}
+
+body{
+  display: block;
+    text-align: center;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+/*@keyframes animate{
+
+0% {
+opacity: 0.1;
+
+}
+
+}
+50%{
+opacity:0.5;
+
+}
+
+100%{
+opacity:1;
+
+}
+
+}*/
+
+
+
+nav{
+position: relative;
+display:flex;
+background-color: black
+;
+height: 80px;
+width: 100%;
+border-radius:6px;
+
+
+
+}
+
+
+nav ul{
+  list-style-type:none;
+  float: right;
+ 
+  color: white;
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  flex: 1;
+ margin-left: 130px;
+}
+
+nav ul li a{
+  color:white;
+  font-size: 17px;
+  padding: 15px 29px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  
+  /*z-index: -1;*/
+
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: darkgoldenrod;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor:grab;
+}
+button:hover {
+  background-color:white; 
+  color: red;
+}
+
+input[type=text] {
+  background-color: white;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png');
+  width: 50%;
+  height: 40px;
+  background-position: 10px 10px;
+ margin-left: 150px;
+ margin-top:80px;
+  background-repeat: no-repeat;
+  transition: width 0.4s ease-in-out;
+ 
+}
+
+input[type=text]:focus {
+  width: 60%;
+}
+
+#side1{
+background-image: url('https://c4.wallpaperflare.com/wallpaper/503/355/645/antonin-hudecek-classic-art-nature-painting-wallpaper-preview.jpg');
+height: 200%;
+width: 150px;
+position: absolute;
+left:0px;
+top: 0;
+bottom: 0;
+z-index: -1; 
+padding-bottom: 1000px;
+ 
+
+} 
+
+#side2{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/503/355/645/antonin-hudecek-classic-art-nature-painting-wallpaper-preview.jpg') ;
+  height: 200%;
+  width: 150px;
+  background-repeat: repeat-y;
+
+  position: absolute;
+  right: 0px;
+  
+  top: 0;
+  bottom: 0;
+z-index: -1;
+}
+  #middle{
+padding: 40px;
+margin-top: 50px;
+margin-right: 100px;
+margin-right: 40px;
+
+  }
+  #middle label{
+text-align: center;
+justify-content: center;
+font-size: 25px;
+
+  }
+
+  #middle input{
+
+justify-content: center;
+
+  }
+  #icon{
+border-radius: 40%;
+animation: animate 5s infinite;
+margin-top: 20px;
+margin-left: 30px;
+  }
+ footer{
+  position: fixed;
+  margin-top: 2%;
+  height: 50;
+   width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
+
+ }
+#output{
+padding-top:0;
+padding-left: 180px;
+padding-right: 180px;
+padding-bottom: 180px;
+margin-top:0;
+margin-left: 130px;
+margin-right: 130px;
+margin-bottom: 50px;
+
+}
+#middle1 {
+  padding: 40px;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-right: 40px;
+
+}
+
+ /*add animation to navbar 
